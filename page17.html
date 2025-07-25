@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>6-Day Luxury Safari Package</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="page17.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      scroll-behavior: smooth;
+    }
+    .highlight-box {
+      background-color: #fef9c3;
+      padding: 1rem;
+      border-radius: 0.75rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+    .price-box {
+      background: linear-gradient(to right, #fcd34d, #fbbf24);
+      color: #78350f;
+      border-radius: 0.75rem;
+      padding: 2rem;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+    .carousel {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      height: 320px;
+      border-radius: 1rem;
+    }
+    .carousel-track {
+      display: flex;
+      width: 300%;
+      animation: slide 18s ease-in-out infinite;
+    }
+    .carousel img {
+      width: 100%;
+      height: 320px;
+      object-fit: cover;
+      transition: transform 0.8s ease-in-out;
+    }
+    @keyframes slide {
+      0%, 20% { transform: translateX(0); }
+      25%, 45% { transform: translateX(-100%); }
+      50%, 70% { transform: translateX(-200%); }
+      75%, 100% { transform: translateX(0); }
+    }
+    summary::-webkit-details-marker {
+      display: none;
+    }
+    details > summary {
+      cursor: pointer;
+      position: relative;
+      padding-left: 1.5rem;
+      transition: all 0.3s ease;
+    }
+    details > summary::before {
+      content: '+';
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-weight: bold;
+      transition: transform 0.3s ease;
+    }
+    details[open] > summary::before {
+      content: '−';
+      transform: rotate(180deg);
+    }
+    details {
+      transition: all 0.3s ease;
+      border-radius: 0.75rem;
+    }
+    details:hover {
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    }
+    .about {
+      max-width: 1200px;
+      margin: 30px auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+    .about h3 {
+      font-size: 26px;
+      margin-bottom: 16px;
+    }
+    .about p {
+      color: #444;
+      margin-bottom: 24px;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    .column {
+      flex: 1;
+      min-width: 350px;
+    }
+    .tour {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 30px;
+    }
+    .tour img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 20px;
+    }
+    .tour h3 {
+      margin: 0 0 5px;
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+    .tour p {
+      margin: 0;
+    }
+    .formspree-form .form-group {
+      margin-bottom: 15px;
+    }
+    .formspree-form .form-group label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    .formspree-form .form-group input,
+    .formspree-form .form-group select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1em;
+    }
+    .formspree-form .form-group input[type="number"] {
+      width: 100px;
+    }
+    .formspree-form .form-group .optional {
+      font-style: italic;
+      color: #777;
+      font-size: 0.9em;
+    }
+    .formspree-form .form-group button {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 1.1em;
+      display: block;
+      margin: 20px auto;
+    }
+    .formspree-form .form-group button:hover {
+      background-color: #0056b3;
+    }
+    .formspree-form .honeypot {
+      display: none;
+
+    }
+
+    .price-section {
+      background-color: #edd2a4;
+      padding: 40px 60px;
+      display: flex;
+      gap: 60px;
+    }
+
+    .price-left {
+      min-width: 150px;
+    }
+
+    .price-left h2 {
+      font-size: 32px;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    .underline {
+      width: 80%;
+      height: 2px;
+      background-color: #c8963e;
+      border: none;
+    }
+
+    .price-right {
+      border-left: 1px dashed #555;
+      padding-left: 40px;
+    }
+
+    .price-right h3 {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .price-right ul {
+      list-style: disc;
+      padding-left: 20px;
+    }
+
+    .price-right li {
+      font-style: italic;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+     .activities-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.activity {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.activity img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.activity h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.activity p {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.about {
+
+      max-width: 1200px;
+      margin: 30px auto;
+      padding: 0 20px;
+      text-align: center;
+      margin-top: 8%;
+    }
+
+    .about h3 {
+      font-size: 50px;
+      margin-bottom: 15%;
+      margin-top: 11%;
+
+      
+    }
+
+    .about h2 {
+      font-size: 30px;
+      font-weight: 100;
+      color: #d4a94f;
+      margin-bottom: -10%;
+      margin-bottom: -10%;
+    }
+
+    .about p {
+      color: #444;
+      margin-bottom: 11%;
+      margin-top: -13%;
+    }
+.pricing-section {
+      background-color: #ecd0a1;
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .pricing-title {
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .underline {
+      width: 220px;
+      height: 2px;
+      background-color: #b3880b;
+      margin-bottom: 30px;
+    }
+    .plan {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 30px;
+    }
+    .plan-name {
+      font-weight: bold;
+      font-size: 24px;
+    }
+    .plan-description {
+      font-style: italic;
+      margin-top: 5px;
+      color: #333;
+    }
+    .plan-price {
+      font-weight: bold;
+      font-size: 32px;
+    }
+    
+  </style>
+</head>
+<body class="bg-white text-gray-800">
+  <div id="main">
+    <div class="hero">
+      <video autoplay muted loop playsinline class="bg-video">
+        <source src="" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <nav>
+        <img src="http://www.preciousmomentssafaris.com/wp-content/uploads/2024/05/Logo-Main-Web.png" alt="Logo" class="logo" />
+        <div id="nav-part2">
+          <h4><a href="index.html">HOME</a></h4>
+          <h4><a href="ourstory.html">OUR STORY</a></h4>
+          <h4><a href="experience.html">EXPERIENCES</a></h4>
+          <h4><a href="destination.html">DESTINATIONS</a></h4>
+          <h4><a href="about.html">ABOUT US</a></h4>
+          <h4><a href="contact.html">CONTACT US</a></h4>
+        </div>
+        <a href="tailor made safari.html" class="btn-top">TAILOR MADE SAFARIS</a>
+      </nav>
+      <div class="hero-content">
+        <h1>6-Day Luxury Safari Package</h1>
+      </div>
+    </div>
+
+    <!-- Tour Overview and Highlights -->
+    <section class="py-20 px-6 md:px-24 bg-gray-50">
+      <div class="grid md:grid-cols-2 gap-12">
+        <div>
+          <h2 class="text-4xl font-bold mb-6">Tour Overview</h2>
+          <p class="text-lg font-semibold mb-2">6-Day Luxury Safari Package</p>
+          <p class="leading-relaxed text-gray-700">This 6-day luxury safari package offers a comprehensive tour of Tanzania’s most famous wildlife destinations, including Tarangire National Park, Serengeti National Park, the world-renowned Ngorongoro Crater, and the scenic Lake Manyara National Park. It is designed for discerning travelers who want to experience Tanzania’s wilderness in comfort and style, with luxurious lodges, gourmet meals, private game drives, and top-notch service throughout.
+          </br>
+        </br>
+            Trip Style
+ </br>
+  </br>
+Luxury Safari | Private Safari | Wildlife Viewing | Nature and Culture
+
+</p>
+        </div>
+        <div class="highlight-box">
+          <h2 class="text-2xl font-bold mb-4 text-yellow-800">Highlights</h2>
+          <ul class="list-disc list-inside space-y-2 text-yellow-900">
+       
+            <li> Big Five Safari</li>
+             <li>4WD Safari
+</li>
+              <li>Location Tanzania
+</li>
+               <li>Natural Wonders</li>
+                <li>Unique Food Experience</li>
+                 <li>Camping - Accommodation</li>
+                  <li>Long Driving
+</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Price -->
+      <!-- Price -->
+ <div class="pricing-section">
+    <div class="pricing-title">Price</div>
+    <div class="underline"></div>
+
+    <div class="plan">
+      <div>
+        <div class="plan-name">Per person in Group of 6 people
+</div>
+        <div class="plan-description">Price Vary According To Group Size - June Till October</div>
+      </div>
+      <div class="plan-price">$7926</div>
+    </div>
+
+   
+  </div>
+
+
+    <!-- Day to Day Trip -->
+    <section class="py-20 px-6 md:px-24 bg-white">
+      <h2 class="text-4xl font-bold mb-10 text-center">Day to Day Trip</h2>
+      <div class="space-y-6">
+        <details class="border border-gray-300 p-5 rounded-lg bg-white shadow-md">
+          <summary class="text-xl font-semibold">Day 1: Arrival in Arusha – Tarangire National Park</summary>
+          <p class="mt-3 text-gray-600">Your luxury safari adventure begins with your arrival in Arusha, where you will be met by your private guide and transferred to Tarangire National Park. Known for its massive elephant herds and ancient baobab trees, Tarangire offers a tranquil start to your journey.
+Morning Departure: After a short briefing in Arusha, you will drive about 2.5 hours to Tarangire National Park in a luxury 4x4 vehicle equipped with a pop-up roof for superior game viewing. Your professional guide will provide an overview of the park’s rich ecosystem and wildlife.
+Mid-Morning Game Drive: Start with a gentle introduction to Tanzania’s wildlife, including elephants, giraffes, and zebras. Tarangire is also home to a wide variety of birds and some of Africa’s most unique landscapes, with towering baobab trees dotting the horizon.
+Luxury Picnic Lunch: Enjoy a gourmet picnic lunch under the shade of an acacia tree, with stunning views of the park’s landscape.
+Afternoon Game Drive: After lunch, continue your game drive and explore the Tarangire River, a magnet for wildlife during the dry season. Watch for lions lounging in the shade and leopards hidden in the trees.
+Arrival at Lodge: In the late afternoon, check into your luxury lodge or tented camp, where you can enjoy a dinner and overnight stay.
+Mea</br>ls Included: Lunch and Dinner</br>
+Accommodation Options:</br>
+• Luxury Option: Ngorongoro Turaco Valley or similar</br>
+Key Activities:</br>
+• Private game drives in Tarangire National Park</br>
+• Gourmet picnic lunch in the wild</br>
+Wildlife: Elephants, lions, leopards, zebras, giraffes, and bird species.</p>
+        </details>
+        <details class="border border-gray-300 p-5 rounded-lg bg-white shadow-md">
+          <summary class="text-xl font-semibold">Day 2: Ngorongoro to Serengeti National Park</summary>
+          <p class="mt-3 text-gray-600">Today, after a hearty breakfast, you will depart for the legendary Serengeti National Park, one of the most iconic wildlife destinations in the world. The journey will take you through the Ngorongoro Conservation Area, with spectacular views of the crater.
+Scenic Drive: The drive to the Serengeti is an adventure in itself, taking you through Maasai villages and the highlands of Ngorongoro before entering the endless plains of the Serengeti.
+Lunch Stop: Enjoy a packed gourmet lunch en route with scenic views of the Ngorongoro Crater.
+Afternoon Game Drive in Serengeti: Upon arrival in the Serengeti, your afternoon game drive will focus on the park’s central Seronera Valley, an area teeming with wildlife. This region is famous for predators like lions and leopards, making it the perfect introduction to the Serengeti’s rich ecosystem.
+Arrival at Luxury Camp: In the late afternoon, arrive at your luxury tented camp, where you’ll be welcomed with a refreshing drink and have time to relax before enjoying a gourmet dinner under the stars.
+</br>Meals Included: Breakfast, Lunch, and Dinner</br>
+Accommodation Options:</br>
+• Luxury Option: Mila Tented Lodge or similar</br>
+Key Activities:</br>
+• Scenic drive through the Ngorongoro Conservation Area</br>
+• Afternoon game drive in the Seronera Valley</br>
+Wildlife: Lions, leopards, cheetahs, elephants, buffaloes, and zebras.</p>
+        </details>
+        <details class="border border-gray-300 p-5 rounded-lg bg-white shadow-md">
+          <summary class="text-xl font-semibold">Day 3: Full-Day Safari in Serengeti National Park</summary>
+          <p class="mt-3 text-gray-600">Day 3 is dedicated to a full-day exploration of the Serengeti National Park, where you’ll have ample time to experience the best of this UNESCO World Heritage Site.
+Sunrise Game Drive: Start your day with an early morning game drive, the best time to spot predators such as lions and cheetahs as they hunt in the cool morning air.
+Bush Breakfast: After your early drive, enjoy a luxury bush breakfast in a scenic part of the park, surrounded by the sounds of nature.
+Mid-morning and Afternoon Game Drives: Continue exploring the park, focusing on different areas such as the Seronera River, known for its year-round water supply, which attracts a large number of animals, including hippos and crocodiles.
+Optional Hot Air Balloon Safari: For a truly unforgettable experience, consider booking an optional hot air balloon safari (additional cost) at dawn. Floating above the Serengeti plains, you will enjoy breathtaking views and spot wildlife from the air, followed by a champagne breakfast.
+Return to Camp: After a thrilling day of game drives, return to your camp or lodge for a gourmet dinner and an evening under the stars.
+</br>Meals Included: Breakfast, Lunch, and Dinner</br>
+Accommodation Options:</br>
+• Luxury Option: Mila Tented Lodge Serengeti or similar</br>
+Key Activities:</br>
+• Full-day game drives in the Serengeti National Park</br>
+• Optional hot air balloon safari</br>
+• Bush breakfast experience</br>
+Wildlife: Lions, leopards, cheetahs, elephants, buffaloes, hippos, and crocodiles.</p>
+        </details>
+        <details class="border border-gray-300 p-5 rounded-lg bg-white shadow-md">
+          <summary class="text-xl font-semibold">Day 4: Serengeti to Ngorongoro Crater</summary>
+          <p class="mt-3 text-gray-600">On Day 4, you will leave the Serengeti behind and head to the awe-inspiring Ngorongoro Crater, one of the most famous natural wonders in Africa and home to an astonishing concentration of wildlife.
+Morning Game Drive in Serengeti: Enjoy one final morning game drive in the Serengeti before departing for Ngorongoro. Scenic Drive to Ngorongoro: The journey takes you through the Ngorongoro Conservation Area, where you can stop at viewpoints for stunning panoramic views of the crater.
+Lunch Stop: Have a gourmet picnic lunch overlooking the crater rim before descending into the crater for an afternoon game drive. Afternoon Game Drive in Ngorongoro Crater: Descend 600 meters into the crater for a half-day game drive, where you can spot the Big Five, including the rare black rhino. The crater floor is home to lions, elephants, buffaloes, zebras, flamingos, and more.
+Arrival at Lodge: After your game drive, check into your luxury lodge perched on the crater rim, offering breathtaking views of the caldera below.
+</br>Meals Included: Breakfast, Lunch, and Dinner</br>
+Accommodation Options:</br>
+• Luxury Option: Melia Ngorongoro Lodge or similar</br>
+Key Activities:</br>
+• Morning game drive in Serengeti</br>
+• Afternoon game drive in Ngorongoro Crater</br>
+• Scenic drive through Ngorongoro Conservation Area</br>
+Wildlife: Black rhinos, lions, elephants, buffaloes, zebras, flamingos, and wildebeests.</p>
+        </details>
+        <details class="border border-gray-300 p-5 rounded-lg bg-white shadow-md">
+          <summary class="text-xl font-semibold">Day 5: Full-Day Safari in Ngorongoro Crater</summary>
+          <p class="mt-3 text-gray-600">Day 5 is dedicated to a full day of exploring the Ngorongoro Crater, a UNESCO World Heritage Site with one of the highest densities of wildlife in Africa.
+Morning Game Drive: Start your day with an early morning game drive in the crater, where you’ll have the opportunity to spot lions, elephants, and perhaps even the elusive leopard. The crater’s unique ecosystem allows for exceptional wildlife viewing in a confined space.
+Luxury Picnic Lunch: Enjoy a luxurious picnic lunch by one of the crater’s hippo pools, relaxing and taking in the incredible surroundings. Afternoon Game Drive: Continue exploring the crater in the afternoon, focusing on areas like the Lerai Forest, home to elephants and monkeys. Your guide will explain the crater’s unique geology and wildlife interactions.
+Return to Lodge: In the late afternoon, return to your luxury lodge for a gourmet dinner and reflection on your extraordinary day in the crater.
+</br>Meals Included: Breakfast, Lunch, and Dinner</br>
+Accommodation Options:</br>
+• Luxury Option: Ngorongoro Oldeani Lodge or similar</br>
+Key Activities:</br>
+• Full-day game drives in Ngorongoro Crater</br>
+• Luxury picnic lunch by the hippo pool</br>
+Wildlife: lions, elephants, black rhinos, buffalo, zebras, and flamingos.</p>
+        </details>
+        <details class="border border-gray-300 p-5 rounded-lg bg-white shadow-md">
+          <summary class="text-xl font-semibold">Day 6: Ngorongoro Crater to Lake Manyara National Park – Return to Arusha</summary>
+          <p class="mt-3 text-gray-600">On the final day of your luxury safari, you will visit the scenic Lake Manyara National Park before returning to Arusha for your departure.
+Drive to Lake Manyara National Park: After breakfast, depart for Lake Manyara, known for its tree-climbing lions and large flocks of flamingos. Morning Game Drive: Enjoy a morning game drive along the shores of the lake, where you may spot giraffes, zebras, and hippos basking in the water. The park’s lush forests are also home to baboons and blue monkeys. Lunch at Lodge: Have a gourmet lunch at one of the luxurious lodges in the park.
+Return to Arusha: In the late afternoon, you will return to Arusha, where you can be dropped off at your hotel or Kilimanjaro International Airport for your onward flight.
+</br>Meals Included: Breakfast and Lunch</br>
+Accommodation: Not included (can be arranged upon request)</br>
+Key Activities:</br>
+• Morning game drive in Lake Manyara National Park</br>
+• Scenic drive back to Arusha</br>
+Wildlife: Tree-climbing lions, flamingos, giraffes, zebras, and hippos.</p>
+        </details>
+       
+      </div>
+    
+    </section>
+
+    
+    <section class="about">
+           <h2>TRUST IN EXPERIENCE</h2>
+        <h3>Top Activities in Katavi National Park </h3>
+
+    </section>  
+
+
+  <section class="activities-section">
+    <div class="activity">
+      <img src="http://www.preciousmomentssafaris.com/wp-content/uploads/2025/03/a.jpg" alt="Game Drives">
+      <div class="content">
+        <h3>Game Drives</h3>
+        <p>On a 4x4 adventure across the Serengeti’s endless plains, spotting the Big Five (lions, leopards, elephants, buffalo, rhinos) and witnessing the Great Wildebeest Migration (seasonal).</p>
+      </div>
+    </div>
+
+    <div class="activity">
+      <img src="https://www.preciousmomentssafaris.com/wp-content/uploads/2025/03/hot-balloon-safari.jpg" alt="Birdwatching">
+      <div class="content">
+        <h3>Hot Air Balloon</h3>
+        <p>Soar above the Serengeti or Tarangire at sunrise, taking in panoramic views of sprawling savannas, grazing herds, and the golden dawn—followed by a champagne breakfast.</p>
+      </div>
+    </div>
+    
+    <div class="activity">
+      <img src="http://www.preciousmomentssafaris.com/wp-content/uploads/2025/03/Birdwatching.jpg" alt="Birdwatching">
+      <div class="content">
+        <h3>Birdwatching</h3>
+        <p>Grab your binoculars to spot over 400 bird species, including flamingos and pelicans, in this lush park known for its alkaline lake and tree-climbing lions.</p>
+      </div>
+    </div>
+
+   
+    
+
+    <div class="activity">
+      <img src="https://www.preciousmomentssafaris.com/wp-content/uploads/2025/03/culture-Tour-.jpg" alt="Walking Safari">
+      <div class="content">
+        <h3>Cultural Visit</h3>
+        <p>Meet the Maasai people, learn about their traditions, and witness vibrant dances and craftsmanship—an authentic glimpse into Tanzania’s rich heritage.</p>
+      </div>
+    </div>
+      <div class="activity">
+      <img src="http://www.preciousmomentssafaris.com/wp-content/uploads/2025/03/walking.jpg" alt="Walking Safari">
+      <div class="content">
+        <h3>Walking Safari</h3>
+        <p>Stretch your legs with a guided bush walk, tracking animal footprints, learning about native plants, and experiencing the wilderness up close alongside expert rangers.</p>
+      </div>
+    </div>
+
+
+    <div class="activity">
+      <img src="https://www.preciousmomentssafaris.com/wp-content/uploads/2025/03/photography.jpg
+
+" alt="Photography Expeditions">
+      <div class="content">
+        <h3>Photography Expeditions
+</h3>
+        <p>Capture Tanzania’s iconic landscapes and wildlife with guided tours designed for shutterbugs, offering prime vantage points and expert tips.
+
+
+</p>
+      </div>
+    </div>
+  </section>
+
+    <!-- Included / Excluded -->
+    <section class="py-20 px-6 md:px-24 bg-gray-50">
+      <div class="grid md:grid-cols-2 gap-12">
+        <div>
+          <details class="mb-6">
+            <summary class="font-bold text-lg mb-2 text-yellow-800">INCLUDED</summary>
+            <ul class="list-disc list-inside text-gray-700">
+              <li>Private 4×4 safari vehicle with a pop-up roof for game viewing.
+</li>
+              <li> Professional English-speaking safari guide.
+</li>
+                <li> All Park entry fees for Tarangire, Serengeti, Ngorongoro Crater, and Lake Manyara.
+</li>
+                  <li> Full-board accommodation in public campsites.
+</li>
+                    <li> All meals as outlined in the itinerary.
+</li>
+                      <li> Bottled drinking water during the safari.
+</li>
+                        <li> Transfers to and from Arusha or Kilimanjaro International Airport.</li>
+              
+            </ul>
+          </details>
+        </div>
+        <div>
+          <details>
+            <summary class="font-bold text-lg mb-2 text-yellow-800">EXCLUDED</summary>
+            <ul class="list-disc list-inside text-gray-700">
+              <li>International flights</li>
+              <li>Travel insurance</li>
+              <li>Visa fees</li>
+              <li>Optional activities such as the: Hot Air Balloon Safari and Maasai Village Visit</li>
+              <li>Tips and gratuities.</li>
+           
+            </ul>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking Form -->
+    <section class="py-20 px-6 md:px-24 bg-white">
+      <h2 class="text-4xl font-bold mb-10 text-center">Book Now</h2>
+      <form class="formspree-form grid gap-5 max-w-xl mx-auto" action="https://formspree.io/f/{form_id}" method="POST">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" name="name" id="name" placeholder="Enter your full name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Your Email</label>
+          <input type="email" name="email" id="email" placeholder="Enter your email" required />
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" name="phone" id="phone" placeholder="Enter your phone number" required />
+        </div>
+        <div class="form-group">
+          <label for="people">Number of People</label>
+          <input type="number" name="people" id="people" min="1" placeholder="e.g., 2" required />
+        </div>
+        <div class="form-group">
+          <label for="days">Number of Days <span class="optional">(optional)</span></label>
+          <input type="number" name="days" id="days" min="1" placeholder="e.g., 6" />
+        </div>
+        <div class="form-group">
+          <label for="nights">Number of Nights <span class="optional">(optional)</span></label>
+          <input type="number" name="nights" id="nights" min="0" placeholder="e.g., 5" />
+        </div>
+        <div class="form-group">
+          <input type="text" name="_gotcha" class="honeypot" />
+        </div>
+        <input type="hidden" name="_subject" value="New Booking: 6-Day Luxury Safari" />
+        <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html" />
+        <input type="hidden" name="package" value="6-Day Luxury Safari Package" />
+        <div class="form-group">
+          <button type="submit">Book Now</button>
+        </div>
+      </form>
+    </section>
+
+    
+
+    <!-- Carousel -->
+    <section class="py-20 px-6 md:px-24">
+      <div class="carousel">
+        <div class="carousel-track">
+          <img src="frontend/images/6.png" alt="Safari Image 1" />
+          <img src="frontend/images/luxury1.jpg" alt="Safari Image 2" />
+          <img src="frontend/images/luxury2.jpg" alt="Safari Image 3" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+  <div class="footer-container">
+    <div class="footer-col logo-col">
+      <img src="./Logo-light.png" alt="Logo" class="footer-logo" />
+      <p>We offer authentic Tanzania and Zanzibar safari experiences that leave a positive impact. Enjoy a wide range of unique, high-quality safaris curated to meet your every need.</p>
+    </div>
+
+    <div class="footer-col">
+      <h3>DESTINATIONS</h3>
+      <ul>
+        <li><a href="artic.html">Serengeti National Park</a></li>
+        <li><a href="Ngorongoro.html">Ngorongoro Crater</a></li>
+        <li><a href="Tarangire.html">Tarangire National Park</a></li>
+        <li><a href="lake.html">Lake Manyara</a></li>
+        <li><a href="saadani.html">Saadani National Park</a></li>
+        <li><a href="katavi.html">Katavi National Park</a></li>
+        <li><a href="mahela.html">Mahela National Park</a></li>
+        <li><a href="Nyerere.html">Nyerere National Park</a></li>
+        <li><a href="Zanzibar.html">Zanzibar Island</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3>QUICK LINKS</h3>
+      <ul>
+        <li><a href="safaris/top-packages.html">Top Safari Packages</a></li>
+        <li><a href="kilimanjaro.html">Mount Kilimanjaro Treks</a></li>
+        <li><a href="experience.html">Zanzibar Holidays</a></li>
+        <li><a href="travel.html">Travel Guide</a></li>
+        <li><a href="terms.html">Terms & Conditions</a></li>
+        <li><a href="refund.html">Refund Policy</a></li>
+        <li><a href="faqs.html">FAQs</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3>CONTACT US</h3>
+      <p>
+        <a href="mailto:bookings@preciousmomentssafaris.com">bookings@preciousmomentssafaris.com</a><br>
+        <a href="tel:+353831584186">+353 83 158 4186</a> |
+        <a href="tel:+255740518784">+255 740 518 784</a> |
+        <a href="tel:+255718503636">+255 718 503 636</a>
+      </p>
+      <p>Dublin, Ireland<br>Arusha and Dar-es-salaam, Tanzania</p>
+    </div>
+  </div>
+</footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

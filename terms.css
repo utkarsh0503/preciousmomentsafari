@@ -1,0 +1,60 @@
+footer {
+  background-color: #000;
+  color: white;
+  padding: 60px 40px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-col {
+  flex: 1 1 200px;
+  margin: 20px;
+}
+
+.footer-col h3 {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #555;
+  padding-bottom: 10px;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+    color: white;
+
+}
+
+.footer-col ul li {
+  padding: 6px 0;
+  font-size: 15px;
+    color: white;
+
+}
+
+.footer-col p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: white;
+}
+
+.footer-logo {
+  width: 150px;
+  margin-bottom: 15px;
+}
+footer a {
+  color: #ffffff; /* or your brand color like #F4A261 or #E9C46A */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #F4A261; /* Example hover color */
+  text-decoration: underline;
+}
